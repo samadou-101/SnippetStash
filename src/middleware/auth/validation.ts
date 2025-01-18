@@ -10,6 +10,7 @@ export const inputValidation = [
     .matches(/^[a-zA-Z0-9_-]+$/)
     .withMessage("invalid username"),
   body("email").isEmail().normalizeEmail().withMessage("Invalid email address"),
+  body("password").trim().notEmpty(),
   (req: Request, res: Response, next: NextFunction) => {
     const errors = validationResult(req);
     if (!errors.isEmpty()) {

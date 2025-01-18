@@ -1,10 +1,16 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
-    "module": "ESNext",
-    "lib": ["ESNext"],
-    "moduleResolution": "node",
+    // "target": "ES6",
+    "module": "NodeNext",
+    // "lib": ["ESNext"],
+    "moduleResolution": "nodenext",
+    // "resolveJsonModule": true,
+    // "allowImportingTsExtensions": true,
+    // "noEmit": true,
     "outDir": "dist",
+    "isolatedModules": true,
+    "typeRoots": ["node_modules/@types", "src/types"],
+    "types": ["express", "node"],
     "rootDir": "src",
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
@@ -15,8 +21,10 @@
     "declarationMap": true
   },
   "ts-node": {
-    "esm": true
+    "esm": true,
+    "transpileOnly": true,
+    "require": ["tsconfig-paths/register"]
   },
-  "include": ["src/**/*"],
+  "include": ["src/**/*", "**/*.ts"],
   "exclude": ["node_modules", "dist"]
 }

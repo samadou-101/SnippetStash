@@ -1,0 +1,22 @@
+"filename", "language", "JSON with Comments", "JSON", "JavaScript", "TypeScript", "Markdown", "comment", "blank", "total"
+"c:\Users\Abdessamed\Desktop\API\snippetStash\README.md", "Markdown", 0, 0, 0, 0, 1, 0, 1, 2
+"c:\Users\Abdessamed\Desktop\API\snippetStash\loader.mjs", "JavaScript", 0, 0, 3, 0, 0, 1, 1, 5
+"c:\Users\Abdessamed\Desktop\API\snippetStash\nodemon.json", "JSON", 0, 5, 0, 0, 0, 0, 1, 6
+"c:\Users\Abdessamed\Desktop\API\snippetStash\package-lock.json", "JSON", 0, 2530, 0, 0, 0, 0, 1, 2531
+"c:\Users\Abdessamed\Desktop\API\snippetStash\package.json", "JSON", 0, 36, 0, 0, 0, 0, 1, 37
+"c:\Users\Abdessamed\Desktop\API\snippetStash\src\config\config.js", "JavaScript", 0, 0, 1, 0, 0, 0, 1, 2
+"c:\Users\Abdessamed\Desktop\API\snippetStash\src\config\config.ts", "TypeScript", 0, 0, 0, 3, 0, 0, 3, 6
+"c:\Users\Abdessamed\Desktop\API\snippetStash\src\controllers\auth\handleRegister.ts", "TypeScript", 0, 0, 0, 39, 0, 0, 3, 42
+"c:\Users\Abdessamed\Desktop\API\snippetStash\src\controllers\controllers.ts", "TypeScript", 0, 0, 0, 0, 0, 0, 1, 1
+"c:\Users\Abdessamed\Desktop\API\snippetStash\src\models\snippets\snippet.ts", "TypeScript", 0, 0, 0, 12, 0, 0, 3, 15
+"c:\Users\Abdessamed\Desktop\API\snippetStash\src\models\users\user.ts", "TypeScript", 0, 0, 0, 15, 0, 0, 4, 19
+"c:\Users\Abdessamed\Desktop\API\snippetStash\src\routes\auth\auth.ts", "TypeScript", 0, 0, 0, 4, 0, 0, 2, 6
+"c:\Users\Abdessamed\Desktop\API\snippetStash\src\routes\routes.ts", "TypeScript", 0, 0, 0, 2, 0, 0, 2, 4
+"c:\Users\Abdessamed\Desktop\API\snippetStash\src\server.ts", "TypeScript", 0, 0, 0, 4, 0, 0, 2, 6
+"c:\Users\Abdessamed\Desktop\API\snippetStash\src\services\services.ts", "TypeScript", 0, 0, 0, 0, 0, 0, 1, 1
+"c:\Users\Abdessamed\Desktop\API\snippetStash\src\services\user\userSrvice.ts", "TypeScript", 0, 0, 0, 26, 0, 1, 4, 31
+"c:\Users\Abdessamed\Desktop\API\snippetStash\src\types\types.d.ts", "TypeScript", 0, 0, 0, 5, 0, 0, 1, 6
+"c:\Users\Abdessamed\Desktop\API\snippetStash\src\utils\encryptionUtils.ts", "TypeScript", 0, 0, 0, 10, 0, 0, 2, 12
+"c:\Users\Abdessamed\Desktop\API\snippetStash\src\utils\jwtUtils.ts", "TypeScript", 0, 0, 0, 5, 0, 0, 1, 6
+"c:\Users\Abdessamed\Desktop\API\snippetStash\tsconfig.json", "JSON with Comments", 23, 0, 0, 0, 0, 1, 1, 25
+"Total", "-", 23, 2571, 4, 125, 1, 3, 36, 2763

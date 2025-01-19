@@ -23,7 +23,11 @@ export const handleRegisterRequest = async (req: Request, res: Response) => {
         console.log("Token Generation Failed!");
         res.status(500).send({ message: "Internal Server Error" });
       }
-    } catch (error) {
+    } catch (error: unknown) {
+      if (error instanceof Error && error.message === "User already exists!") {
+        res.status(400).send({ message: "User Already Exists!" });
+        return;
+      }
       console.log("Error duging User creation", error);
       res.status(500).send({ message: "Internal Server Error!" });
     }

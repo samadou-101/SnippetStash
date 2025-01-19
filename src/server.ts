@@ -3,18 +3,18 @@ import registerRouter from "./routes/auth/registerRouter.js";
 import cors from "cors";
 import { connectDB } from "./config/db/db.js";
 import { dbURI, DEV_PORT } from "./config/config.js";
+import { checkAuth } from "./middleware/auth/checkAuth.js";
+import snippetRouter from "./routes/endpoints/snippetRoutes.js";
 const app = express();
 
 app.use(express.json());
 app.use(cors());
-app.get("/", (req, res) => {
+app.get("/", checkAuth, (req, res) => {
   res.send("welcome");
 });
-app.get("/t", (req, res) => {
-  res.send({ message: "from t" });
-});
-app.use("/register", registerRouter);
 
+app.use("/register", registerRouter);
+app.use("/snippet", snippetRouter);
 const startServer = async () => {
   try {
     await connectDB();

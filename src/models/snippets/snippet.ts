@@ -8,7 +8,9 @@ const snippetSchema = new mongoose.Schema({
   expirationDate: { type: Date },
   category: { type: String },
   language: { type: String },
-  author: { type: mongoose.Schema.Types.ObjectId, ref: "User" },
+  author: { type: mongoose.Schema.Types.ObjectId, ref: "User", required: true },
 });
 
-export const Snippet = mongoose.model("Snippet", snippetSchema);
+const Snippet = mongoose.model("Snippet", snippetSchema);
+
+export default Snippet;

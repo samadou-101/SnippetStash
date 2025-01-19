@@ -4,8 +4,8 @@ import {
   getSnippetById,
   updateSnippetById,
 } from "../../controllers/snippets/snippets.controllers.js";
-import { validateSnippet } from "../../middleware/validateSnippet.js";
-import { validateSnippetID } from "../../middleware/validateParams.js";
+import { validateSnippet } from "../../middleware/validation/validateSnippet.js";
+import { validateSnippetID } from "../../middleware/validation/validateParams.js";
 import { checkAuth } from "../../middleware/auth/checkAuth.js";
 const snippetRouter = express.Router();
 

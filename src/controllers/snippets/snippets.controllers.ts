@@ -1,9 +1,9 @@
 import { Request, Response, NextFunction } from "express";
 import {
   createSnippet,
+  deleteSnippet,
   findSnippetInDB,
 } from "../../services/snippet/snippetService.js";
-import mongoose from "mongoose";
 
 export const getSnippetById = async (req: Request, res: Response) => {
   const snippetId = req.params.id;
@@ -46,3 +46,15 @@ export const addSnippet = async (
 };
 
 export const updateSnippetById = () => {};
+
+export const deleteSnippetById = async (req: Request, res: Response) => {
+  const { userId } = req.body;
+  console.log("the user id is " + "  " + userId);
+  const snippetId = req.params.id;
+  try {
+    await deleteSnippet(snippetId, userId);
+    res.status(200).send({ message: "Snippet Deleted" });
+  } catch (error) {
+    res.status(409).send({ message: "Snippet not found!" });
+  }
+};

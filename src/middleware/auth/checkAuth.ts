@@ -10,14 +10,14 @@ export const checkAuth = async (
   const token =
     req.headers["authorization"] && req.headers["authorization"].split(" ")[1];
   if (!token) {
-    res.status(400).send({ message: "Invalid tooken" });
+    res.status(400).send({ message: "Invalid token" });
     return;
   }
 
   try {
     if (token !== undefined) {
       const result = compareToken(token) as JwtPayload;
-      console.log(result);
+      // console.log(result);
       req.body.userId = result.userId;
       next();
     }

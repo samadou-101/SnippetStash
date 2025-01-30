@@ -1,6 +1,7 @@
 import express from "express";
 import {
   addSnippet,
+  deleteSnippetById,
   getSnippetById,
   updateSnippetById,
 } from "../../controllers/snippets/snippets.controllers.js";
@@ -12,5 +13,6 @@ const snippetRouter = express.Router();
 snippetRouter.get("/:id", checkAuth, validateSnippetID, getSnippetById);
 snippetRouter.post("/", checkAuth, validateSnippet, addSnippet);
 snippetRouter.put("/", updateSnippetById);
+snippetRouter.delete("/:id", checkAuth, deleteSnippetById);
 
 export default snippetRouter;

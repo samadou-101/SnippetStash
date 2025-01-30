@@ -8,9 +8,9 @@ const swaggerOptions = {
       version: "1.0.0",
       description: "API for managing code snippets",
     },
-    servers: [{ url: "http/localhost:3000", description: "Local server" }],
+    servers: [{ url: "http://localhost:3000", description: "Local server" }],
   },
-  apis: [".src/routes/*.ts"],
+  apis: ["./src/routes/**/*.ts"],
 };
 
 const swaggerSpec = swaggerJSDoc(swaggerOptions);

@@ -1,0 +1,11 @@
+openapi: 3.0.0
+info:
+  title: Snippet Stash API
+  version: 1.0.0
+paths:
+  /snippet:
+    get:
+      summary: get all snippets
+      responses:
+        200:
+          description: Successful response
